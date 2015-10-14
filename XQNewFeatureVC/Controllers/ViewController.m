@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+Random.h"
+
 
 @interface ViewController ()
 
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithRed:100 green:30 blue:160 alpha:1];
+    self.view.backgroundColor = [UIColor randomColor];
 
 }
 

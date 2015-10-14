@@ -14,6 +14,10 @@
 		4A528AC01BCCE3CC0062C84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A528ABE1BCCE3CC0062C84C /* LaunchScreen.storyboard */; };
 		4A528ACB1BCCE3CC0062C84C /* XQNewFeatureVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A528ACA1BCCE3CC0062C84C /* XQNewFeatureVCTests.m */; };
 		4A528AD61BCCE3CC0062C84C /* XQNewFeatureVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A528AD51BCCE3CC0062C84C /* XQNewFeatureVCUITests.m */; };
+		4A52AE1C1BCE27B200CAC390 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A52AE181BCE27B200CAC390 /* 1.png */; settings = {ASSET_TAGS = (); }; };
+		4A52AE1D1BCE27B200CAC390 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A52AE191BCE27B200CAC390 /* 2.png */; settings = {ASSET_TAGS = (); }; };
+		4A52AE1E1BCE27B200CAC390 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A52AE1A1BCE27B200CAC390 /* 3.png */; settings = {ASSET_TAGS = (); }; };
+		4A52AE1F1BCE27B200CAC390 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A52AE1B1BCE27B200CAC390 /* 4.png */; settings = {ASSET_TAGS = (); }; };
 		4A908B321BCDF4D5006DFBA4 /* XQNewFeatureBaseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A908B2F1BCDF4D5006DFBA4 /* XQNewFeatureBaseVc.m */; settings = {ASSET_TAGS = (); }; };
 		4A908B331BCDF4D5006DFBA4 /* XQNewFeatureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A908B311BCDF4D5006DFBA4 /* XQNewFeatureVC.m */; settings = {ASSET_TAGS = (); }; };
 		4A908B3F1BCDF4FA006DFBA4 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A908B361BCDF4FA006DFBA4 /* UIColor+Random.m */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +59,10 @@
 		4A528AD11BCCE3CC0062C84C /* XQNewFeatureVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XQNewFeatureVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A528AD51BCCE3CC0062C84C /* XQNewFeatureVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQNewFeatureVCUITests.m; sourceTree = "<group>"; };
 		4A528AD71BCCE3CC0062C84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A52AE181BCE27B200CAC390 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		4A52AE191BCE27B200CAC390 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		4A52AE1A1BCE27B200CAC390 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		4A52AE1B1BCE27B200CAC390 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		4A908B2E1BCDF4D5006DFBA4 /* XQNewFeatureBaseVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQNewFeatureBaseVc.h; sourceTree = "<group>"; };
 		4A908B2F1BCDF4D5006DFBA4 /* XQNewFeatureBaseVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQNewFeatureBaseVc.m; sourceTree = "<group>"; };
 		4A908B301BCDF4D5006DFBA4 /* XQNewFeatureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQNewFeatureVC.h; sourceTree = "<group>"; };
@@ -133,6 +141,10 @@
 			children = (
 				4A528AB91BCCE3CC0062C84C /* Main.storyboard */,
 				4A528ABC1BCCE3CC0062C84C /* Assets.xcassets */,
+				4A52AE181BCE27B200CAC390 /* 1.png */,
+				4A52AE191BCE27B200CAC390 /* 2.png */,
+				4A52AE1A1BCE27B200CAC390 /* 3.png */,
+				4A52AE1B1BCE27B200CAC390 /* 4.png */,
 				4A528ABE1BCCE3CC0062C84C /* LaunchScreen.storyboard */,
 				4A528AC11BCCE3CC0062C84C /* Info.plist */,
 				4A528AB11BCCE3CC0062C84C /* main.m */,
@@ -290,6 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A528AC01BCCE3CC0062C84C /* LaunchScreen.storyboard in Resources */,
+				4A52AE1F1BCE27B200CAC390 /* 4.png in Resources */,
+				4A52AE1C1BCE27B200CAC390 /* 1.png in Resources */,
+				4A52AE1D1BCE27B200CAC390 /* 2.png in Resources */,
+				4A52AE1E1BCE27B200CAC390 /* 3.png in Resources */,
 				4A528ABD1BCCE3CC0062C84C /* Assets.xcassets in Resources */,
 				4A528ABB1BCCE3CC0062C84C /* Main.storyboard in Resources */,
 			);
