@@ -64,18 +64,19 @@
         label.textAlignment = NSTextAlignmentCenter;
         return;
     }
-    
-    UIPageControl *pageControl         = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 30, self.view.bounds.size.width, 30)];
-    pageControl.pageIndicatorTintColor = self.pageIndicatorTintColor ? self.pageIndicatorTintColor : [UIColor grayColor];
-    pageControl.numberOfPages          = self.imagesNameArray.count  ? self.imagesNameArray.count  : self.controllersArray.count;
-    pageControl.hidesForSinglePage     = YES;
-    pageControl.hidden                 = self.pageControlHidden;
+
+    UIPageControl *pageControl           = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 30, self.view.bounds.size.width, 30)];
+    pageControl.pageIndicatorTintColor   = self.pageIndicatorTintColor ? self.pageIndicatorTintColor : [UIColor grayColor];
+    pageControl.numberOfPages            = self.imagesNameArray.count  ? self.imagesNameArray.count  : self.controllersArray.count;
+    pageControl.hidesForSinglePage       = YES;
+    pageControl.hidden                   = self.pageControlHidden;
+    pageControl.defersCurrentPageDisplay = YES;
 
     [self.view addSubview:pageControl];
-    self.pageControl                   = pageControl;
+    self.pageControl                     = pageControl;
 
-    NSUInteger count                   = self.imagesNameArray.count ? self.imagesNameArray.count : self.controllersArray.count;
-    scrollView.contentSize             = CGSizeMake(screenW * count, screenH);
+    NSUInteger count                     = self.imagesNameArray.count ? self.imagesNameArray.count : self.controllersArray.count;
+    scrollView.contentSize               = CGSizeMake(screenW * count, screenH);
 
     if (self.imagesNameArray.count) {
         

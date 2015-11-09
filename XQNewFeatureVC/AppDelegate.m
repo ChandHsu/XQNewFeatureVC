@@ -27,7 +27,6 @@
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window = window;
     
-    [self.window makeKeyAndVisible];
     
     // 沙盒版本
     NSString *version =[NSKeyedUnarchiver unarchiveObjectWithFile:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"version.data"]];
@@ -51,6 +50,7 @@
             self.window.rootViewController = [[ViewController alloc] init];
         };
         
+        [self.window makeKeyAndVisible];
         // 保存当前版本
 //        [NSKeyedArchiver archiveRootObject:currentVersion toFile:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"version.data"]];
     }
