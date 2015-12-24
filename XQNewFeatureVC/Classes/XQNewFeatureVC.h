@@ -32,3 +32,15 @@
 
 
 @end
+
+
+@interface XQNewFeatureBaseVc : UIViewController
+
+/***  控制器进入展示区  ***/
+- (void)thisVcDidEnterForeground;
+/***  控制器离开展示区  ***/
+- (void)thisVcDidEnterBackground;
+/***  控制器正在进入展示区  ratio:进入前台的比例  ***/
+- (void)thisVcGettingIntoForegroundWithRatio:(CGFloat)ratio;
+
+@end

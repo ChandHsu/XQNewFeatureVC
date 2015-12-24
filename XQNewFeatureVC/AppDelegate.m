@@ -39,11 +39,11 @@
         self.window.rootViewController = [[ViewController alloc] init];
     }else{
         
-        XQNewFeatureVC *newVc = [[XQNewFeatureVC alloc] initWithFeatureImagesNameArray:@[@"1",@"2",@"3",@"4"]];
-//        ViewController1 *vc1 = [ViewController1 new];
-//        ViewController2 *vc2 = [ViewController2 new];
-//        ViewController3 *vc3 = [ViewController3 new];
-//        XQNewFeatureVC *newVc = [[XQNewFeatureVC alloc] initWithFeatureControllerArray:@[vc1,vc2,vc3]];
+//        XQNewFeatureVC *newVc = [[XQNewFeatureVC alloc] initWithFeatureImagesNameArray:@[@"1",@"2",@"3",@"4"]];
+        ViewController1 *vc1 = [ViewController1 new];
+        ViewController2 *vc2 = [ViewController2 new];
+        ViewController3 *vc3 = [ViewController3 new];
+        XQNewFeatureVC *newVc = [[XQNewFeatureVC alloc] initWithFeatureControllerArray:@[vc1,vc2,vc3]];
         newVc.pageIndicatorTintColor = [UIColor randomColor];
         self.window.rootViewController = newVc;
         newVc.completeBlock = ^{

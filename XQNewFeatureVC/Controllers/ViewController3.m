@@ -30,4 +30,13 @@
     NSLog(@"第三个页面进入后台");
 }
 
+- (void)thisVcGettingIntoForegroundWithRatio:(CGFloat)ratio{
+    NSLog(@"第三个控制器%%%f进入了前台",ratio*100);
+}
+
+- (void)thisVcGettingIntoBackgroundWithRatio:(CGFloat)ratio{
+    NSLog(@"第三个控制器%%%f进入了后台",ratio*100);
+}
+
+
 @end

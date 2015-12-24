@@ -7,7 +7,6 @@
 //
 
 #import "XQNewFeatureVC.h"
-#import "XQNewFeatureBaseVc.h"
 
 
 #define screenW  self.view.bounds.size.width
@@ -139,6 +138,24 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     self.pageControl.currentPage = (scrollView.contentOffset.x + screenW/2) / screenW;
+    
+    CGFloat ratio = ((int)scrollView.contentOffset.x % (int)screenW)/screenW;
+    
+    XQNewFeatureBaseVc *currentVc = self.controllersArray[self.pageControl.currentPage];
+    
+    if (scrollView.contentOffset.x < self.pageControl.currentPage * screenW) {// 往前滑动
+        if (self.pageControl.currentPage==0) return;
+        XQNewFeatureBaseVc *toVc = self.controllersArray[self.pageControl.currentPage-1];
+        
+        [currentVc thisVcGettingIntoForegroundWithRatio:ratio];
+        [toVc thisVcGettingIntoForegroundWithRatio:1-ratio];
+    }else{
+        if (self.pageControl.currentPage+1 == self.controllersArray.count) return;
+        XQNewFeatureBaseVc *toVc = self.controllersArray[self.pageControl.currentPage+1];
+        [currentVc thisVcGettingIntoForegroundWithRatio:1-ratio];
+        [toVc thisVcGettingIntoForegroundWithRatio:ratio];
+    }
+    
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -154,18 +171,24 @@
             
         }
 }
-
 - (void)completeBtnClick{
     
     if (self.completeBlock) {
         self.completeBlock();
     }
 }
-
 - (BOOL)prefersStatusBarHidden{
     return YES;
 }
 
 
+
+@end
+
+@implementation XQNewFeatureBaseVc
+
+- (void)thisVcDidEnterForeground{}
+- (void)thisVcDidEnterBackground{}
+- (void)thisVcGettingIntoForegroundWithRatio:(CGFloat)ratio{}
 
 @end

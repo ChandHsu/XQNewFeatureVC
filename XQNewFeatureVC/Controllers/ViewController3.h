@@ -6,7 +6,7 @@
 //  Copyright © 2015年 xuqiang. All rights reserved.
 //
 
-#import "XQNewFeatureBaseVc.h"
+#import "XQNewFeatureVC.h"
 
 @interface ViewController3 : XQNewFeatureBaseVc
 
