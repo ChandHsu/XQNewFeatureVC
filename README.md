@@ -67,6 +67,9 @@
 
 /***  控制器离开展示区  ***/
 - (void)thisVcDidEnterBackground;
+
+/***  控制器正在进入(移出)展示区  ratio:在前台显示的比例  ***/
+- (void)thisVcGettingIntoForegroundWithRatio:(CGFloat)ratio;
 ```
 如果有其他需要,请酌情自定义,内部代码非常的简单;
 目前只完成了这两个用的最多的功能,后续会添加更多,其中有很多不足的地方,如果有什么建议或意见,还请一起交流探讨,大家共同进步,我的联系方式  QQ:296646879<br>
